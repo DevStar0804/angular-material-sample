@@ -6,16 +6,13 @@ declare interface RouteInfo {
     title: string;
     icon: string;
     class: string;
+    color: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
-    { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
-    { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },
+    { path: '/dashboard', title: 'new',  icon: '/assets/img/add.svg', class: '', color: '#f1c214'},
+    { path: '/user-profile', title: 'data',  icon:'/assets/img/data.svg', class: '', color: '#FD4B4C' },
+    { path: '/table-list', title: 'settings',  icon:'/assets/img/setting.svg', class: '', color: '#428cdf'},
+    { path: '/typography', title: 'help',  icon:'/assets/img/help.svg', class: '', color: '#1DC89B' },
 ];
 
 @Component({

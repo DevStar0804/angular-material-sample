@@ -1,9 +1,9 @@
 <div class="logo">
     <a href="https://www.creative-tim.com" class="simple-text">
         <div class="logo-img">
-            <img src="/assets/img/angular2-logo-red.png"/>
+<!--            <img src="/assets/img/angular2-logo-red.png"/>-->
         </div>
-        Creative Tim
+        AUTHENTICATOR DB
     </a>
 </div>
 <div class="sidebar-wrapper">
@@ -55,10 +55,21 @@
     </ul>
   </div>
     <ul class="nav">
-        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-            <a class="nav-link" [routerLink]="[menuItem.path]">
-                <i class="material-icons">{{menuItem.icon}}</i>
-                <p>{{menuItem.title}}</p>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" >
+                <i class="material-icons">person</i>
+                <p>gevrok/root</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" >
+                <p>Product Authenticator</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" style="height:200px;">
+            <a class="nav-link" [routerLink]="[menuItem.path]" style="height:100%; background-color:{{menuItem.color}}">
+                <img src="{{menuItem.icon}}" alt="">
+                <p style="font-size: 50px; padding-top: 40px; text-align:center; font-family: 'Bauhaus 93';">{{menuItem.title}}</p>
             </a>
         </li>
     </ul>
