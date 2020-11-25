@@ -1,4 +1,8 @@
 @font-face {
-    font-family: "Bauhaus 93";
-    src: url("./Baumans-Regular.ttf");
+    font-family: "Baumans";
+    src: url("./Baumans-Regular.woff");
+}
+@font-face {
+    font-family: "Bauhaus93";
+    src: url("./BAUHS93.woff");
 }

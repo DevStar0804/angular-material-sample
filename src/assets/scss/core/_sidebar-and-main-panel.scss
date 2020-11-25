@@ -48,7 +48,7 @@
         overflow: auto;
         width: 260px;
         z-index: 4;
-
+        background-color: $red-color;
         padding-bottom: 30px;
 
         .dropdown .dropdown-backdrop{
@@ -200,6 +200,16 @@
             text-align: center;
             color: #a9afbb;
         }
+        .sidebar-item-text {
+            font-size: 50px;
+            padding-top: 55px;
+            text-align:center;
+            font-family: 'Bauhaus 93';
+            color: white;
+        }
+        .new-active, .data-active, .settings-active, .help-active {
+            width: 260px;
+        }
     }
 
     .nav li a,
@@ -244,6 +254,7 @@
         display: block;
         position: relative;
         z-index: 4;
+        background-color: $red-color;
 
         &:after{
             content: '';
